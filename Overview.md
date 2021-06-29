@@ -1,5 +1,5 @@
 # Guide to R-scripts
-Supporting information to Jørgensen et al. (2021) "A unifying model to estimate thermal tolerance limits across static, dynamic and fluctuating exposures to thermal stress in ectotherms". https://www.researchsquare.com/article/rs-347544/v1. Please cite appropriately.
+Supporting information to Jørgensen et al. (2021) "A unifying model to estimate thermal tolerance limits across static, dynamic and fluctuating exposures to thermal stress in ectotherms". Scientific Report 11: 12840. https://www.nature.com/articles/s41598-021-92004-6. Please cite appropriately.
 Authors: Lisa Bjerregaard Jørgensen, Hans Malte, Michael Ørsted, Nikolaj Andreasen Klahn & Johannes Overgaard
 
 ______
