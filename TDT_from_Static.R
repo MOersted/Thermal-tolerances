@@ -1,6 +1,6 @@
 ##########
 #Title: A unifying model to estimate thermal tolerance limits in ectotherms across static, dynamic and fluctuating exposures to thermal stress 
-#Authors: Lisa Bjerregaard Jørgensen, Hans Malte, Michael Ørsted, Nikolaj Andreasen Klahn & Johannes Overgaard
+#Authors: Lisa Bjerregaard JÃ¸rgensen, Hans Malte, Michael Ã˜rsted, Nikolaj Andreasen Klahn & Johannes Overgaard
 #Date: 20 April 2021
 #Version: 1.1
 ##########
@@ -80,7 +80,7 @@ for(i in 1:length(groups))
       plot(tmp$assay_temp,log10(tmp$t_coma),type='n',
            ylim=c(0,max(c(log10(extra_t_coma),log10(tmp$t_coma)))),
            xlim=c(min(c(sCTmaxtmp$assay_temp,static$assay_temp)),max(c(sCTmaxtmp$assay_temp,static$assay_temp))),
-           xlab="Temperature (°C)",
+           xlab="Temperature (Â°C)",
            ylab=expression('log'[10]*' knockdown time (min)'),
            main=paste0(unique(tmp$group),", z = ",signif(z,3))
           )
@@ -106,7 +106,7 @@ for(i in 1:length(groups))
       plot(tmp$assay_temp,log10(tmp$t_coma),type='n',
            ylim=c(0,max(c(log10(sCTmaxtmp$t_coma),log10(static$t_coma)))),
            xlim=c(min(c(sCTmaxtmp$assay_temp,static$assay_temp)),max(c(sCTmaxtmp$assay_temp,static$assay_temp))),
-           xlab="Temperature (°C)",
+           xlab="Temperature (Â°C)",
            ylab=expression('log'[10]*' knockdown time (min)'),
            main=paste0(unique(tmp$group),", z = ",signif(z,3)," (estimated)")
           )
@@ -140,7 +140,7 @@ for(i in 1:length(groups))
       plot(tmp$assay_temp,log10(tmp$t_coma),type='n',
            ylim=c(min(c(log10(sCTmaxtmp$t_coma),log10(static$t_coma))),max(c(log10(sCTmaxtmp$t_coma),log10(static$t_coma)))),
            xlim=c(min(c(sCTmaxtmp$assay_temp,static$assay_temp)),max(c(sCTmaxtmp$assay_temp,static$assay_temp))),
-           xlab="Temperature (°C)",
+           xlab="Temperature (Â°C)",
            ylab=expression('log'[10]*' knockdown time (min)'),
            main=paste0(unique(tmp$group),", z = ",signif(z,3))
           )
@@ -165,7 +165,7 @@ for(i in 1:length(groups))
       plot(tmp$assay_temp,log10(tmp$t_coma),type='n',
            ylim=c(min(c(log10(sCTmaxtmp$t_coma),log10(static$t_coma))),max(c(log10(sCTmaxtmp$t_coma),log10(static$t_coma)))),
            xlim=c(min(c(sCTmaxtmp$assay_temp,static$assay_temp)),max(c(sCTmaxtmp$assay_temp,static$assay_temp))),
-           xlab="Temperature (°C)",
+           xlab="Temperature (Â°C)",
            ylab=expression('log'[10]*' knockdown time (min)'),
            main=paste0(unique(tmp$group),", z = ",signif(z,3))
       )
@@ -195,7 +195,7 @@ for(i in 1:length(groups))
         plot(tmp$assay_temp,log10(tmp$t_coma),type='n',
              ylim=c(0,max(log10(static$t_coma))),
              xlim=c(min(static$assay_temp),max(static$assay_temp)),
-             xlab="Temperature (°C)",
+             xlab="Temperature (Â°C)",
              ylab=expression('log'[10]*' knockdown time (min)'),
              main=paste0(unique(tmp$group),", z = ",signif(z,3))
         )
@@ -223,7 +223,7 @@ for(i in 1:length(groups))
         plot(tmp$assay_temp,log10(tmp$t_coma),type='n',
              ylim=c(0,max(log10(static$t_coma))),
              xlim=c(min(static$assay_temp),max(static$assay_temp)),
-             xlab="Temperature (°C)",
+             xlab="Temperature (Â°C)",
              ylab=expression('log'[10]*' knockdown time (min)'),
              main=paste0(unique(tmp$group),", z = ",signif(z,3)," (estimated)")
         )
@@ -239,8 +239,8 @@ for(i in 1:length(groups))
         dCTmax = To+(z/log(10))*log((log(10)*ramprates[j]*tLs/z)*exp((log(10)/z)*(sCTmax-To))+exp((log(10)/z)*(Tc-To)))
         dCTmax.predictionstmp$dCTmax_pred[j] = dCTmax
       }
-      dCTmax.predictions = rbind(dCTmax.predictions,dCTmax.predictionstmp)
     }
+    dCTmax.predictions = rbind(dCTmax.predictions,dCTmax.predictionstmp)
   }
   
   if(exists("fluc_temp"))
